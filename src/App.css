@@ -1,42 +1,81 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.text {
   text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 2em auto;
+}
+/* .about_hero {
+  background-image: url("../assets/contacthero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20em;
+  position: relative;
+}
+.nav_wrap {
+  padding: 1em;
+}
+h1 {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+} */
+input,
+.span,
+.label,
+textarea {
+  width: 100%;
+  display: block;
+}
+form {
+  max-width: 500px;
+  width: 90%;
+  margin: auto;
+}
+.label {
+  margin-bottom: 1em;
+}
+.span {
+  color: rgb(53, 75, 82);
+}
+input,
+textarea {
+  padding: 1em;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid rgb(53, 75, 82);
+}
+input:focus,
+textarea {
+  border: 2px solid rgb(90, 177, 203);
+}
+.submit {
+  margin: 3em auto;
+  background-color: rgb(53, 75, 82);
+  color: aliceblue;
+  border: none;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: rgb(90, 177, 203);
+  color: #fff;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+/* input:invalid {
+  border: crimson;
+} */
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* input:invalid:focus {
+  outline-color: crimson;
+} */
+input .eRed {
+  border: crimson;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.red {
+  color: crimson;
 }
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.green {
+  color: green;
 }
